@@ -58,12 +58,15 @@ const TaskSection = () => {
             <button className="w-full bg-slate-200 border border-dashed border-gray-500 rounded-md p-4 text-gray-900 mb-4">
               +
             </button>
-            <div className="bg-white rounded-md p-1 border border-spacing-2">
+            <div className="bg-white rounded-md p-3 border border-spacing-2">
               {index === 0 && (
                 <>
-                  <div className="flex flex-wrap gap-2 mb-2 ">
-                    <span className="bg-blue-500 text-white text-xs font-semibold px-2.5 py-0.5 rounded-full">Recruitment</span>
-                    <span className="bg-green-500 text-white text-xs font-semibold px-2.5 py-0.5 rounded-full">Compliance</span>
+                  <div className="flex items-center justify-between mb-2"> {/* Added justify-between and items-center */}
+                    <div className="flex flex-wrap gap-2"> {/* Wrapped tags in a div */}
+                      <span className="bg-blue-500 text-white text-xs font-semibold px-2.5 py-1 rounded-full">Recruitment</span>
+                      <span className="bg-green-500 text-white text-xs font-semibold px-2.5 py-1 rounded-full">Compliance</span>
+                    </div>
+                    <EllipsisVerticalIcon className="h-5 w-5 text-gray-800" /> 
                   </div>
                   <h4 className="text-sm font-semibold mb-1">Employee Onboarding Approval</h4>
                   <p className="text-xs text-gray-600">A new onboarding request has been submitted for Jane Smith (Marketing Department). HR needs to verify the required documents, approve the onboarding process, and schedule an introduction meeting with the team.</p>
@@ -71,9 +74,12 @@ const TaskSection = () => {
               )}
               {index === 1 && (
                 <>
-                  <div className="flex flex-wrap gap-2 mb-2">
-                    <span className="bg-pink-500 text-white text-xs font-semibold px-2.5 py-0.5 rounded-full">Finance</span>
-                    <span className="bg-orange-500 text-white text-xs font-semibold px-2.5 py-0.5 rounded-full">Compensation</span>
+                  <div className="flex items-center justify-between mb-2">
+                  <div className="flex flex-wrap gap-2"> 
+                    <span className="bg-pink-500 text-white text-xs font-semibold px-2.5 py-1 rounded-full">Finance</span>
+                    <span className="bg-orange-500 text-white text-xs font-semibold px-2.5 py-1 rounded-full">Compensation</span>
+                  </div>
+                  <EllipsisVerticalIcon className="h-5 w-5 text-gray-800" /> 
                   </div>
                   <h4 className="text-sm font-semibold mb-1">Payroll Processing</h4>
                   <p className="text-xs text-gray-600">HR and the finance team are calculating salaries, bonuses, tax deductions, and overtime pay. Any discrepancies need to be resolved before the final payroll submission on March 10.</p>
@@ -81,9 +87,12 @@ const TaskSection = () => {
               )}
               {index === 2 && (
                 <>
-                  <div className="flex flex-wrap gap-2 mb-2">
-                    <span className="bg-purple-500 text-white text-xs font-semibold px-2.5 py-0.5 rounded-full">Feedback</span>
-                    <span className="bg-blue-500 text-white text-xs font-semibold px-2.5 py-0.5 rounded-full">Engagement</span>
+                  <div className="flex items-center justify-between mb-2">
+                  <div className="flex flex-wrap gap-2"> 
+                    <span className="bg-purple-500 text-white text-xs font-semibold px-2.5 py-1 rounded-full">Feedback</span>
+                    <span className="bg-blue-500 text-white text-xs font-semibold px-2.5 py-1 rounded-full">Engagement</span>
+                  </div>
+                  <EllipsisVerticalIcon className="h-5 w-5 text-gray-800" /> 
                   </div>
                   <h4 className="text-sm font-semibold mb-1">Employee Satisfaction Survey</h4>
                   <p className="text-xs text-gray-600">The HR team has gathered feedback from all departments and is now analyzing the results to identify key areas for improvement.</p>
