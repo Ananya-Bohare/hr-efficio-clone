@@ -5,7 +5,7 @@ import { DocumentIcon } from '@heroicons/react/24/outline'; // Import the docume
 
 const DashboardSummary = () => {
   return (
-    <div className="p-4">
+    <div className="mb-6">
       <div className="flex justify-between items-center mb-6">
         <div>
           <h2 className="text-2xl font-semibold font-sans">Hallo, Arnold Smith</h2>
@@ -16,7 +16,7 @@ const DashboardSummary = () => {
           Export
         </button>
       </div>
-      <div className='grid grid-cols-1 md:grid-cols-2 gap-2'>
+      <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
         <Cards />
         <Chart />
       </div>

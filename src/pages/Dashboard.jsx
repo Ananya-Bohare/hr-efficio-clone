@@ -6,11 +6,11 @@ import TaskSection from '../components/TaskSection';
 
 const Dashboard = () => {
   return (
-    <div className="flex h-screen"> {/* Removed flex-col */}
+    <div className="flex h-screen overflow-hidden"> {/* Removed flex-col */}
       <Sidebar />
       <div className="flex flex-col flex-1"> {/* Added flex-col */}
         <Header />
-        <div className="flex-grow p-6"> {/* Increased padding */}
+        <div className="flex-grow p-5 overflow-y-auto"> {/* Increased padding */}
           <DashboardSummary />
           <TaskSection />
         </div>

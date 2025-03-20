@@ -3,9 +3,9 @@ import { InformationCircleIcon, EllipsisVerticalIcon, ArrowRightIcon } from '@he
 
 const Cards = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
       {/* Total Employees Card */}
-      <div className="bg-white rounded-lg shadow w-64">
+      <div className="bg-white rounded-lg border border-gray-200 shadow w-65">
       <div className="flex justify-between items-center mt-5 ml-4 mb-5">
         <h3 className="text-md font-medium text-gray-700 flex items-center">
           Total Employees
@@ -35,7 +35,7 @@ const Cards = () => {
     </div>
 
       {/* Job Applicant Card */}
-      <div className="bg-white rounded-lg shadow w-64">
+      <div className="bg-white rounded-lg border border-gray-200 shadow w-65">
       <div className="flex justify-between items-center mt-5 ml-4 mb-5">
         <h3 className="text-md font-medium text-gray-700 flex items-center">
             Job Applicant
@@ -65,7 +65,7 @@ const Cards = () => {
       </div>
 
       {/* Total Revenue Card */}
-<div className="bg-white rounded-lg shadow w-64">
+<div className="bg-white rounded-lg border border-gray-200 shadow w-65">
   <div className="flex justify-between items-center mt-5 ml-4 mb-5">
     <h3 className="text-md font-medium text-gray-700 flex items-center">
       Total Revenue
@@ -98,7 +98,7 @@ const Cards = () => {
 </div>
 
       {/* Attendance Rate Card */}
-      <div className="bg-white rounded-lg shadow w-64">
+      <div className="bg-white rounded-lg border border-gray-200 shadow w-65">
       <div className="flex justify-between items-center mt-5 ml-4 mb-5">
         <h3 className="text-md font-medium text-gray-700 flex items-center">
             Attendance Rate

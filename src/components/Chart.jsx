@@ -19,7 +19,7 @@ const Chart = () => {
   };
 
   return (
-    <div className="bg-white rounded-lg shadow-lg p-4">
+    <div className="bg-white rounded-lg border border-gray-200 shadow p-4">
       {/* Header Section */}
       <div className="flex justify-between items-center mb-6 bg-white rounded-lg"> {/* Added background, rounded corners, padding */}
       <div className="flex items-center">
@@ -49,11 +49,11 @@ const Chart = () => {
       <div className="grid grid-cols-4 gap-2 mb-10">
         <div className="relative">
           <p className="text-3xl font-semibold number">173</p>
-          <p className="text-sm text-gray-700 absolute top-4 ml-11">Total Employ</p>
+          <p className="text-sm text-gray-700 absolute top-4 ml-12">Total Employ</p>
         </div>
         <div className="relative">
-          <p className="text-3xl font-semibold number">128</p>
-          <p className="text-sm text-gray-700 absolute top-4 ml-11">On Time</p>
+          <p className="text-3xl font-semibold number ml-4">128</p>
+          <p className="text-sm text-gray-700 absolute top-4 ml-16">On Time</p>
         </div>
         <div className="relative">
           <p className="text-3xl font-semibold number">21</p>

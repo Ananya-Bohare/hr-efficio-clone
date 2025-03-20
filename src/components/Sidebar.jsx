@@ -26,7 +26,7 @@ const Sidebar = () => {
   };
 
   return (
-    <aside className="w-80 bg-white h-screen flex flex-col border-r-4 border-gray-200">
+    <aside className="w-80 bg-white h-screen flex flex-col border-r-4 border-gray-200 ">
       <div className="flex items-center justify-between p-5 border-b border-gray-200">
         <div className="flex items-center">
           <PlusIcon className="h-6 w-6 text-blue-500 mr-2" /> {/* Increased icon size */}

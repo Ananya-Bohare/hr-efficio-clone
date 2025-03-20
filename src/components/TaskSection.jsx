@@ -3,7 +3,7 @@ import { InformationCircleIcon, EllipsisVerticalIcon, CalendarDaysIcon, ListBull
 
 const TaskSection = () => {
   return (
-    <div className="p-4">
+    <div className="bg-white rounded-lg border border-gray-200 shadow p-4">
       <div className="flex justify-between items-center mb-4">
         <div className="flex items-center">
           <h2 className="text-lg font-semibold mr-2">Task</h2>
@@ -55,10 +55,10 @@ const TaskSection = () => {
                 <EllipsisVerticalIcon className="h-5 w-5 text-gray-800" />
               </button>
             </div>
-            <button className="w-full bg-slate-200 border border-dashed border-gray-400 rounded-md p-4 text-gray-400 mb-4">
+            <button className="w-full bg-slate-200 border border-dashed border-gray-500 rounded-md p-4 text-gray-900 mb-4">
               +
             </button>
-            <div className="bg-white rounded-md p-4 border border-spacing-2">
+            <div className="bg-white rounded-md p-1 border border-spacing-2">
               {index === 0 && (
                 <>
                   <div className="flex flex-wrap gap-2 mb-2 ">
