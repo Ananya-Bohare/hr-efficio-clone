@@ -1,0 +1,361 @@
+/* Modern Container Styles */
+.modern-org-chart-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #f8fafc;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.org-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.org-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin: 0;
+}
+
+.zoom-controls {
+  display: flex;
+  gap: 0.5rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 0.25rem;
+}
+
+.zoom-controls button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: none;
+  border-radius: 6px;
+  color: #64748b;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.zoom-controls button:hover {
+  background: #f1f5f9;
+  color: #334155;
+}
+
+.zoom-controls button svg {
+  width: 16px;
+  height: 16px;
+}
+
+.org-tree-wrapper {
+  width: 100%;
+  height: calc(100% - 80px);
+  background: #f8fafc;
+  overflow: hidden;
+}
+
+/* Modern Node Styles */
+.modern-employee-node {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.modern-employee-node.hovered {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  border-color: #cbd5e1;
+}
+
+.modern-employee-node::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  border-radius: 12px 0 0 12px;
+}
+
+.employee-image-container {
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.employee-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #c1cad5;
+}
+
+.avatar-placeholder {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.employee-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.employee-name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin: 0 0 0.15rem 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.employee-title {
+  font-size: 0.8rem;
+  color: #64748b;
+  margin: 0 0 0.5rem 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.employee-meta {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.department-badge {
+  font-size: 0.7rem;
+  padding: 0.1rem 0.5rem;
+  background: #e0e7ff;
+  color: #4338ca;
+  border-radius: 99px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.location-tag {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.7rem;
+  color: #64748b;
+}
+
+.location-tag svg {
+  flex-shrink: 0;
+}
+/* Tree Connections */
+.rd3t-link {
+  stroke-dasharray: 5, 5;
+  animation: dash 30s linear infinite;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 1000;
+  }
+}
+
+.tree-controls {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.tree-controls button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background: #f1f5f9;
+  color: #334155;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  transition: all 0.2s ease;
+}
+
+.tree-controls button:hover {
+  background: #e2e8f0;
+}
+
+.toggle-indicator {
+  position: absolute;
+  right: 1rem;
+  top: 20%;
+  transform: translateY(-50%);
+  border: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Add Employee Button */
+.add-employee-btn {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.modern-employee-node:hover .add-employee-btn {
+  opacity: 1;
+}
+
+.add-employee-btn:hover {
+  background: #4338ca;
+}
+
+.add-root-employee-btn {
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s ease;
+}
+
+.add-root-employee-btn:hover {
+  background: #4338ca;
+}
+
+.header-controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Employee Form Modal */
+.employee-form-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.employee-form-container {
+  background: white;
+  padding: 24px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.employee-form-container h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #1e293b;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #334155;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.form-actions button {
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.form-actions button[type="button"] {
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  color: #64748b;
+}
+
+.form-actions button[type="submit"] {
+  background: #4f46e5;
+  color: white;
+  border: none;
+}
+
+.node-actions {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: flex;
+  gap: 8px;
+}

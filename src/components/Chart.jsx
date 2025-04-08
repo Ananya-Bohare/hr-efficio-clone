@@ -48,6 +48,7 @@ const Chart = () => {
       {/* Statistics Section */}
       <div className="grid grid-cols-4 gap-2 mb-10">
         <div className="relative">
+<<<<<<< HEAD
           <p className="text-3xl font-semibold number">173</p>
           <p className="text-sm text-gray-700 absolute top-4 ml-12">Total Employ</p>
         </div>
@@ -61,6 +62,21 @@ const Chart = () => {
         </div>
         <div className="relative">
           <p className="text-3xl font-semibold number">24</p>
+=======
+          <p className="text-2xl font-semibold number">173</p>
+          <p className="text-sm text-gray-700 absolute top-4 ml-12">Total Employ</p>
+        </div>
+        <div className="relative">
+          <p className="text-2xl font-semibold number ml-4">128</p>
+          <p className="text-sm text-gray-700 absolute top-4 ml-16">On Time</p>
+        </div>
+        <div className="relative">
+          <p className="text-2xl font-semibold number">21</p>
+          <p className="text-sm text-gray-700 absolute top-4 ml-11">Absent</p>
+        </div>
+        <div className="relative">
+          <p className="text-2xl font-semibold number">24</p>
+>>>>>>> e34ec79 (first commit)
           <p className="text-sm text-gray-700 absolute top-4 ml-11">Late</p>
         </div>
       </div>
