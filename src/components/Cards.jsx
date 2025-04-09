@@ -16,11 +16,7 @@ const Cards = () => {
         </button>
       </div>
       <div className="flex items-center mb-7">
-<<<<<<< HEAD
         <span className="text-4xl ml-4 font-semibold number">173</span>
-=======
-        <span className="text-3xl ml-4 font-semibold number">173</span>
->>>>>>> e34ec79 (first commit)
         <span className="bg-green-100 text-green-900 px-2 py-1 rounded-lg text-xs flex items-center ml-4">
           <span className=" rounded-full p-0.5 mr-1 border border-green-700"> {/* Green border */}
             <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -50,11 +46,7 @@ const Cards = () => {
           </button>
         </div>
         <div className="flex items-center mb-7">
-<<<<<<< HEAD
         <span className="text-4xl ml-4 font-semibold number">983</span>
-=======
-        <span className="text-3xl ml-4 font-semibold number">983</span>
->>>>>>> e34ec79 (first commit)
         <span className="bg-green-100 text-green-900 px-2 py-1 rounded-lg text-xs flex items-center ml-4">
           <span className=" rounded-full p-0.5 mr-1 border border-green-700"> {/* Green border */}
             <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -84,13 +76,11 @@ const Cards = () => {
     </button>
   </div>
   <div className="flex items-center mb-7">
-<<<<<<< HEAD
     <span className="text-4xl ml-4 font-semibold number">
-=======
     <span className="text-3xl ml-4 font-semibold number">
->>>>>>> e34ec79 (first commit)
       $4,842
       <span className="text-gray-500">.00</span> {/* Gray zeros */}
+    </span>
     </span>
     <span className="bg-green-100 text-green-900 px-2 py-1 rounded-lg text-xs flex items-center ml-4">
       <span className="rounded-full p-0.5 mr-1 border border-green-700">
@@ -121,11 +111,7 @@ const Cards = () => {
           </button>
         </div>
         <div className="flex items-center mb-7">
-<<<<<<< HEAD
         <span className="text-4xl ml-4 font-semibold number">75%</span>
-=======
-        <span className="text-3xl ml-4 font-semibold number">75%</span>
->>>>>>> e34ec79 (first commit)
         <span className="bg-green-100 text-green-900 px-2 py-1 rounded-lg text-xs flex items-center ml-4">
           <span className=" rounded-full p-0.5 mr-1 border border-green-700"> {/* Green border */}
             <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
