@@ -1,4 +1,4 @@
-import ava1 from '../assets/ava1.PNG';
+import ava1 from '../assets/ava1.png';
 import ava2 from '../assets/ava2.PNG';
 import ava3 from '../assets/ava3.PNG';
 import ava4 from '../assets/ava4.PNG';
